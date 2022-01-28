@@ -4,3 +4,5 @@ simple and lightweight multiplatform string comparison tool for whenever you nee
 compile on linux with `g++ main.cpp -o comparestr`
 
 install on linux with `sudo mv comparestr /bin`
+
+if your on windows use visual studio or something idk
