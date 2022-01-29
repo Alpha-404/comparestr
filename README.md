@@ -10,6 +10,7 @@ if your on windows use visual studio or something idk
 use through cmd on windows add it to your path
 
 install/update script - can be deleted after used (linux only) (auto removes uneeded files apart from update files)
+very fancy 
 
 ```
 #!/bin/bash
