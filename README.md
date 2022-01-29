@@ -1,4 +1,7 @@
 # comparestr
+
+im too lazy to update the releases so if you want the latest just compile it from source
+
 simple and lightweight multiplatform string comparison tool for whenever you need to compare strings or sha1 or whatever your into
 
 compile on linux with `g++ main.cpp -o comparestr`
