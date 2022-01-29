@@ -14,6 +14,9 @@ install/update script - can be deleted after used (linux only) (auto removes une
 ```
 #!/bin/bash
 
+bold=$(tput bold)
+normal=$(tput sgr0)
+bloo="\e[94m"
 echo "removing and updating..."
 rm -rf tempinstallcomparestr
 mkdir tempinstallcomparestr
@@ -28,10 +31,11 @@ cd ~
 rm -rf tempinstallcomparestr
 echo "updated!"
 echo "testing..."
-echo "comparestr hi bye"
-comparestr hi bye
-echo "comparestr hi hi"
+echo -e "${bold}$HOSTNAME@$USER ${bloo}comparestr hi $USER${normal}"
+comparestr $USER bye
+echo -e "${bold}$HOSTNAME@$USER ${bloo}comparestr hi hi${normal}"
 comparestr hi hi
+echo -e "\nif the following results did not say \"Different Strings\" \nand then \"Same String\" then file a issue at the github repository\nhttps://github.com/Alpha-404/comparestr/issues"
 ````
 
 uninstall script if you for some reason need it (linux only)
