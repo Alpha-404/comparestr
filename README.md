@@ -22,6 +22,7 @@ bold=$(tput bold)
 normal=$(tput sgr0)
 bloo="\e[94m"
 echo "removing and updating..."
+cd ~
 rm -rf tempinstallcomparestr
 mkdir tempinstallcomparestr
 cd tempinstallcomparestr
